@@ -1,29 +1,25 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: MyWidget(),
-    ),
-  );
+  runApp(const MyApp());
 }
 
-class MyWidget extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Calculator")),
-      body: Center(
-        child: Container(
-          width: 600,
-          child: Text(
-            'Mini Project 1.',
-            maxLines: 4,
-            overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.headline4,
-          ),
-        ),
-      ),
+    return MaterialApp(
+      home: Scaffold(
+          appBar: AppBar(
+        backgroundColor: Colors.indigo,
+        title: Text('Calculator'),
+      )),
     );
   }
 }
