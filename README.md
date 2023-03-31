@@ -1,4 +1,4 @@
-# flutter2
+# flutter
 
 A new Flutter project.
 
