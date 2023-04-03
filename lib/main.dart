@@ -28,7 +28,10 @@ class _MyAppState extends State<MyApp> {
           Align(
               alignment: Alignment.centerLeft,
               child: Text('Result : 0',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold))),
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black))),
           SizedBox(
             height: 30,
           ),
